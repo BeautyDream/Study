@@ -16,7 +16,7 @@ public class CacheEntity<T> {
     private long createTime = System.currentTimeMillis();
 
     /**
-     * 缓存的有效时间 单位ms
+     * 缓存的有效时间 单位ms （小于等于0表示永久保存）
      */
     private long cacheTime;
 
