@@ -13,7 +13,7 @@ public class CacheEntity<T> {
     /**
      * 创建的时间 单位ms
      */
-    private long createTime;
+    private long createTime = System.currentTimeMillis();
 
     /**
      * 缓存的有效时间 单位ms
