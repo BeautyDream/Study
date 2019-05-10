@@ -11,6 +11,7 @@
         <module>proxy</module>
         <module>cache</module>
         <module>common</module>
+        <module>design_pattern</module>
     </modules>
 
     <properties>
