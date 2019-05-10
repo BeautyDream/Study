@@ -1,24 +1,24 @@
 package com.study.iterator;
 
+import java.util.ArrayList;
+
 /**
  * @Auther: LiaoPeng
  * @Date: 2019/5/10
  */
 public class BookShelf implements Aggregate{
-    private Book[] books;
-    private int last = 0;
-    public BookShelf(int maxsize){
-        this.books = new Book[maxsize];
+    private ArrayList<Book> books;
+    public BookShelf(){
+        this.books = new ArrayList<>();
     }
     public Book getBookAt(int index){
-        return this.books[index];
+        return this.books.get(index);
     }
     public void appendBook(Book book){
-        this.books[last] = book;
-        last++;
+        this.books.add(book);
     }
     public int getLength(){
-        return last;
+        return books.size();
     }
 
     /**
