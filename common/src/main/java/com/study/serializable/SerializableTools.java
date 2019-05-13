@@ -22,8 +22,8 @@ public class SerializableTools {
         people.setId(1);
         people.setName("新风");
         people.setAge(23);
-//        System.out.println("序列化对象："+people.toString());
-//        writeToFile(people,file);
+        System.out.println("序列化对象："+people.toString());
+        writeToFile(people,file);
         People p = readFromFile(file);
         System.out.println("反序列化结果："+p.toString());
 
